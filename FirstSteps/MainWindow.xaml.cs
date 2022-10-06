@@ -126,7 +126,7 @@ namespace IPv4_Adressen_Rechner
                 int maxip = (int)Math.Pow(2, int.Parse(arrays[3, 0]) + int.Parse(arrays[3, 2]) + int.Parse(arrays[3, 4]) + int.Parse(arrays[3, 6]));
                 MaxNets.Text = Convert.ToString((int)Math.Pow(2, int.Parse(arrays[3, 1]) + int.Parse(arrays[3, 3]) + int.Parse(arrays[3, 5]) + int.Parse(arrays[3, 7])));
                 int used = int.Parse(Convert.ToString(Used.Text));
-                int res = maxip - used - 2;
+                int res = maxip - used - 3;
                 MaxIps.Text = Convert.ToString(res);
             }
 
@@ -150,7 +150,7 @@ namespace IPv4_Adressen_Rechner
                 int maxip = (int)Math.Pow(2, int.Parse(arrays[3, 0]) + int.Parse(arrays[3, 2]) + int.Parse(arrays[3, 4]));
                 MaxNets.Text = Convert.ToString((int)Math.Pow(2, int.Parse(arrays[3, 1]) + int.Parse(arrays[3, 3]) + int.Parse(arrays[3, 5])));
                 int used = int.Parse(Convert.ToString(Used.Text));
-                int res = maxip - used - 2;
+                int res = maxip - used - 3;
                 MaxIps.Text = Convert.ToString(res);
             }
 
@@ -169,7 +169,7 @@ namespace IPv4_Adressen_Rechner
                 int maxip = (int)Math.Pow(2, int.Parse(arrays[3, 0]) + int.Parse(arrays[3, 2]));
                 MaxNets.Text = Convert.ToString((int)Math.Pow(2, int.Parse(arrays[3, 1]) + int.Parse(arrays[3, 3])));
                 int used = int.Parse(Convert.ToString(Used.Text));
-                int res = maxip - used - 2;
+                int res = maxip - used - 3;
                 MaxIps.Text = Convert.ToString(res);
             }
 
@@ -183,7 +183,7 @@ namespace IPv4_Adressen_Rechner
                 int max = (int)Math.Pow(2, int.Parse(arrays[3, 0]));
                 int max2 = (int)Math.Pow(2, int.Parse(arrays[3, 1]));
                 int used = int.Parse(Convert.ToString(Used.Text));
-                int res = max - used - 2;
+                int res = max - used - 3;
                 MaxIps.Text = Convert.ToString(res);
                 MaxNets.Text = Convert.ToString(max2);
             }
